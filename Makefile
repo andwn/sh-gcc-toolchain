@@ -54,7 +54,7 @@ PREFIX := $(shell pwd)/work
 PATH   := $(PREFIX)/bin:$(PATH)
 LOGDIR := $(shell pwd)
 SHASUM := shasum -a 256 -c
-LANGS  ?= c
+LANGS  ?= c,c++
 
 COMFLAGS := --target=sh-elf --with-endian=big --with-cpu=m2 --prefix=$(PREFIX) --libdir=$(PREFIX)/lib --libexecdir=$(PREFIX)/libexec
 
