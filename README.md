@@ -1,7 +1,7 @@
 ### GNU cross-compiler toolchain for Hitachi SuperH-2 (sh-elf)
 
 To build & install:
- - `make`
+ - `make -j8`
  - `sudo make install`
 
 Newlib is built by default. To disable it use `make without-newlib`.
